@@ -28,6 +28,16 @@ class Coche:
         print("Call = " , call, "\n" , "Form = ", form)
 
     
-
+    def usuarios_recurrentes (self):
+        usuarios_recurrentes = 0
+        #creo otro bucle para ver cuantos tengo
+        for i in df["user_recurrent"]:
+            if i == "True":
+                usuarios_recurrentes = usuarios_recurrentes + 1
+        
+        total = df.count()["user_recurrent"]
+        porcentaje = (usuarios_recurrentes * 100 )/ total
+        print("El porcentaje de usuarios recurrentes es: ", porcentaje)
+        
 
 
