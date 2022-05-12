@@ -7,5 +7,13 @@ import sys
 
 
 df = pd.DataFrame("navegacion.csv")
-df = df.rename(columns={""})
+
 df = df.dropna()
+
+class Coche:
+    def __init__(self, marca):
+        self.marca = df(marca)
+
+    def call_form(self):
+        
+
