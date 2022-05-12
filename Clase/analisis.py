@@ -1,6 +1,6 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+
+
 import csv
 import os
 import sys
@@ -66,3 +66,5 @@ def coche_mas_visitado(self):
 
             
 
+
+print(coche_mas_visitado())

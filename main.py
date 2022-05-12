@@ -8,4 +8,5 @@ import sys
 if __name__ == "__main__":
     from Clase.analisis import *
     vistas = coche_mas_visitado()
+    print(vistas)
 
