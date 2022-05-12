@@ -6,7 +6,10 @@ import os
 import sys
 
 if __name__ == "__main__":
-    from Clase.analisis import *
-    vistas = coche_mas_visitado()
-    print(vistas)
-
+  from Clase.analisis import *
+  recurrente = usuarios_recurrentes()
+  tipo_conversion = call_form()
+  visita = numero_visitas()
+  popular = coche_mas_visitado()
+  print(recurrente, tipo_conversion, visita, popular)
+  

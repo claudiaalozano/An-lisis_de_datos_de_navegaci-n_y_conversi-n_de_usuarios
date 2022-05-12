@@ -1,5 +1,7 @@
+
 import pandas as pd
 import numpy as np
+from replit import db
 import matplotlib.pyplot as plt
 import csv
 import os
@@ -11,8 +13,6 @@ df = pd.DataFrame("navegacion.csv")
 gf = pd.Dataframe("conversiones.csv")
 
 df = df.dropna()
-
-
 
 def call_form(self):
     #como es un contador, creo dos variables para cada uno
@@ -47,7 +47,7 @@ def numero_visitas(self):
     gf["Fechas"] = gf["date"] + " " + gf["hour"]
         
 
-    contador = 0 #
+    contador = 0 
     for i in c1:
         if i in gf["Fechas"]:
             contador = contador + 1
@@ -65,7 +65,5 @@ def coche_mas_visitado(self):
         lista[coche] = lista + 1
     print(lista)
 
-            
 
-
-print(coche_mas_visitado())
+print(usuarios_recurrentes())
