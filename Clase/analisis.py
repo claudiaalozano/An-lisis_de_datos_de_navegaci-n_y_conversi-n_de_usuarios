@@ -7,8 +7,6 @@ import csv
 import os
 import sys
 
-
-
 df = pd.DataFrame("navegacion.csv")
 gf = pd.Dataframe("conversiones.csv")
 
@@ -54,8 +52,7 @@ def numero_visitas(self):
     porcentaje = (contador * 100 )/ numero
     print("El porcentaje de visitas es: " , porcentaje)
 
-        
-
+      
 def coche_mas_visitado(self):
     lista = [] 
         
@@ -65,5 +62,3 @@ def coche_mas_visitado(self):
         lista[coche] = lista + 1
     print(lista)
 
-
-print(usuarios_recurrentes())

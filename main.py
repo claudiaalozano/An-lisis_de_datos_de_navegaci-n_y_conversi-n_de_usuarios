@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import csv
 import os
 import sys
+from Clase.analisis import *
+
 
 if __name__ == "__main__":
   from Clase.analisis import *
